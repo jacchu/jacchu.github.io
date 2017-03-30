@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf8">
+  <script src="processing.min.js"></script>
+  <script src="BloomingFlower(600,600).js" type="application/processing" data-processing-target="BloomingFlower_canvas"></script>
+  <script src="RoundFlower.js" type="application/processing" data-processing-target="RoundFlower_canvas"></script>
+  <script src="MovingFlower.js" type="application/processing" data-processing-target="MovingFlower_canvas"></script>
+  <script src="SimpleFlower.js" type="application/processing" data-processing-target="SimpleFlower_canvas"></script>
+  <style>
+    #SimpleFlower_canvas {
+      position:absolute;
+      left: 8px;
+      top: 21px;
+    }
+    #MovingFlower_canvas {
+      position:absolute;
+      left: 8px;
+      top: 429px;
+    }
+    #BloomingFlower_canvas {
+      position:absolute;
+      left: 416px;
+      top: 5px;
+    }
+    .instructions {
+      position:absolute;
+      left: 1274px;
+      top: 30px;
+      width: 400px;
+    }
+    #RoundFlower_canvas {
+      position:absolute;
+      left: 1274px;
+      top: 429px;
+    }
+  </style>
+<head>
+
+<body>
+  <canvas id="SimpleFlower_canvas"></canvas>
+  <canvas id="MovingFlower_canvas"></canvas>
+  <canvas id="BloomingFlower_canvas"></canvas>
+
+  <div class="instructions">
+    <h1>Click on the Flower you Want to Move</h1>
+    <h1>Play with the Arrow Keys and See What Happens!</h1>
+    <h1>&nbsp;</h1>
+    <h1>Press Shift to Restart the Main Flower</h1>
+  </div>
+
+  <canvas id="RoundFlower_canvas"></canvas>
+
+<body>
+
+<html>
