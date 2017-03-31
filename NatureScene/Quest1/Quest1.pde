@@ -26,7 +26,7 @@ void bundle() {
   opacity = new ArrayList<Tree>();
   
   for (int index = 0; index < 20; ++ index) {
-    PImage flames = loadImage("https://s26.postimg.org/q47qlvyl5/flames.png");
+    PImage flames = loadImage("flames copy.png");
     Cloud cloud = new Cloud();
     Tree tree = new Tree(flames);
     images.add(cloud);
@@ -36,11 +36,11 @@ void bundle() {
   }
   
   for(int index = 0; index < 2; ++ index) {
-    PImage rain = loadImage("https://s26.postimg.org/43re59fx5/rain.png");
-    PImage tree = loadImage("https://s26.postimg.org/4n12s9wpl/tree.png");
-    PImage fire = loadImage("https://s26.postimg.org/48v5exn89/fire.png");
-    PImage moon = loadImage("https://s26.postimg.org/7efr555uh/moon.png");
-    PImage sun = loadImage("https://s26.postimg.org/zd9ww07h5/sun.png");
+    PImage rain = loadImage("rain copy.png");
+    PImage tree = loadImage("tree copy.png");
+    PImage fire = loadImage("fire copy.png");
+    PImage moon = loadImage("moon copy.png");
+    PImage sun = loadImage("sun copy.png");
     
     Characters charactersRain = new Characters(rain);
     Characters charactersTree = new Characters(tree);
@@ -68,10 +68,11 @@ void bundle() {
 void setup () {
   size(1280, 755);
   bundle();
-  rainbow = loadImage("https://s26.postimg.org/9qnr2qift/rainbow.png");
+  rainbow = loadImage("rainbow copy.png");
 }
 
 void draw () {
+  noStroke();
   if(day == true) {
     background(130, 202, 250);
     fill(255, 255, 0);
