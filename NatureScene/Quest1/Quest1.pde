@@ -36,11 +36,11 @@ void bundle() {
   }
   
   for(int index = 0; index < 2; ++ index) {
-    PImage rain = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/rain%20copy.png");
-    PImage tree = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/tree%20copy.png");
-    PImage fire = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/fire%20copy.png");
-    PImage moon = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/moon%20copy.png");
-    PImage sun = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/sun%20copy.png");
+    PImage rain = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/flames%20copy.png");
+    PImage tree = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/flames%20copy.png");
+    PImage fire = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/flames%20copy.png");
+    PImage moon = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/flames%20copy.png");
+    PImage sun = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/flames%20copy.png");
     
     Characters charactersRain = new Characters(rain);
     Characters charactersTree = new Characters(tree);
@@ -68,7 +68,7 @@ void bundle() {
 void setup () {
   size(1280, 755);
   bundle();
-  rainbow = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/rainbow%20copy.png");
+  rainbow = loadImage("https://github.com/jacchu/jacchu.github.io/blob/master/NatureScene/flames%20copy.png");
 }
 
 void draw () {
