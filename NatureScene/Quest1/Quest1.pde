@@ -1,3 +1,5 @@
+/*@pjs preload="https://jacchu.github.io/flames.png,https://jacchu.github.io/rain.png,https://jacchu.github.io/tree.png,https://jacchu.github.io/fire.png,https://jacchu.github.io/moon.pnghttps://jacchu.github.io/sun.png,https://jacchu.github.io/rainbow.png
+"; */
 PImage rainbow;
 ArrayList<Display> images;
 ArrayList<Cloud> canRain;
