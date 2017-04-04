@@ -220,15 +220,15 @@ public class Characters implements Display {
   float y;
   float scale;
   float rate;
-  PImage image;
+  PImage characterImage;
   
   public Characters(PImage image) {
     this.x = random(25, width - 25);
     this.y = random(-400, height - 200);
     this.scale = random(0.03, 0.06);
     this.rate = random(0.5, 1);
-    this.image = image;
-    this.image.resize(0, round(this.image.height * this.scale));
+    this.characterImage = image;
+    this.characterImage.resize(0, round(this.characterImage.height * this.scale));
   }
   
   public float getX() {
@@ -238,10 +238,10 @@ public class Characters implements Display {
     return this.y;
   }
   public float getWidth() {
-    return image.width;
+    return characterImage.width;
   }
   public float getHeight() {
-    return image.height;
+    return characterImage.height;
   }
   
   public boolean mouseZone() {
@@ -253,7 +253,7 @@ public class Characters implements Display {
   }
   
   public void display() {
-    image(this.image, this.x, this.y);
+    image(this.characterImage, this.x, this.y);
     y = y + this.rate;
     if( y > height + 100) {
         y = random(-400, -50);
@@ -365,7 +365,6 @@ public class Tree implements Display {
   boolean fopacity = false;
   boolean burns = false;
   float scale;
-  float tint;
   PImage flames;
   
   public Tree(PImage flames) {
