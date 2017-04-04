@@ -253,7 +253,7 @@ public class Characters implements Display {
   }
   
   public void display() {
-    image(image, this.x, this.y);
+    image(this.image, this.x, this.y);
     y = y + this.rate;
     if( y > height + 100) {
         y = random(-400, -50);
