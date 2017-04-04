@@ -68,7 +68,7 @@ void bundle() {
 void setup () {
   size(1280, 755);
   bundle();
-  rainbow = loadImage("https://jacchu.github.io/rainbow copy.png");
+  rainbow = loadImage("https://jacchu.github.io/rainbow.png");
 }
 
 void draw () {
