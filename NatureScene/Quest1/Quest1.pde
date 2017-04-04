@@ -26,7 +26,7 @@ void bundle() {
   opacity = new ArrayList<Tree>();
   
   for (int index = 0; index < 20; ++ index) {
-    PImage flames = loadImage("https://jacchu.github.io/NatureScene/flames.png");
+    PImage flames = loadImage("https://jacchu.github.io/NatureScene/Quest1/data/flames.png");
     Cloud cloud = new Cloud();
     Tree tree = new Tree(flames);
     images.add(cloud);
@@ -36,11 +36,11 @@ void bundle() {
   }
   
   for(int index = 0; index < 2; ++ index) {
-    PImage rain = loadImage("https://jacchu.github.io/NatureScene/rain.png");
-    PImage tree = loadImage("https://jacchu.github.io/NatureScene/tree.png");
-    PImage fire = loadImage("https://jacchu.github.io/NatureScene/fire.png");
-    PImage moon = loadImage("https://jacchu.github.io/NatureScene/moon.png");
-    PImage sun = loadImage("https://jacchu.github.io/NatureScene/sun.png");
+    PImage rain = loadImage("https://jacchu.github.io/NatureScene/Quest1/data/rain.png");
+    PImage tree = loadImage("https://jacchu.github.io/NatureScene/Quest1/data/tree.png");
+    PImage fire = loadImage("https://jacchu.github.io/NatureScene/Quest1/data/fire.png");
+    PImage moon = loadImage("https://jacchu.github.io/NatureScene/Quest1/data/flames.png");
+    PImage sun = loadImage("https://jacchu.github.io/NatureScene/Quest1/data/sun.png");
     
     Characters charactersRain = new Characters(rain);
     Characters charactersTree = new Characters(tree);
@@ -68,7 +68,7 @@ void bundle() {
 void setup () {
   size(1280, 755);
   bundle();
-  rainbow = loadImage("https://jacchu.github.io/NatureScene/rainbow.png");
+  rainbow = loadImage("https://jacchu.github.io/NatureScene/Quest1/data/rainbow.png");
 }
 
 void draw () {
