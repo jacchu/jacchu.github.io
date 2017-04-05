@@ -1,4 +1,4 @@
-/*@pjs preload="flames.png,rain.png,tree.png,fire.png,moon.png,sun.png,rainbow.png"; */
+/*@pjs preload="https://jacchu.github.io/NatureScene/flames.png,https://jacchu.github.io/NatureScene/rain.png,https://jacchu.github.io/NatureScene/tree.png,https://jacchu.github.io/NatureScene/fire.png,https://jacchu.github.io/NatureScene/moon.png,https://jacchu.github.io/NatureScene/sun.png,https://jacchu.github.io/NatureScene/rainbow.png"; */
 PImage rainbow;
 ArrayList<Display> images;
 ArrayList<Cloud> canRain;
@@ -27,7 +27,7 @@ void bundle() {
   opacity = new ArrayList<Tree>();
   
   for (int index = 0; index < 20; ++ index) {
-    PImage flames = loadImage("flames.png");
+    PImage flames = loadImage("https://jacchu.github.io/NatureScene/flames.png");
     Cloud cloud = new Cloud();
     Tree tree = new Tree(flames);
     images.add(cloud);
@@ -37,11 +37,11 @@ void bundle() {
   }
   
   for(int index = 0; index < 2; ++ index) {
-    PImage rain = loadImage("rain.png");
-    PImage tree = loadImage("tree.png");
-    PImage fire = loadImage("fire.png");
-    PImage moon = loadImage("moon.png");
-    PImage sun = loadImage("sun.png");
+    PImage rain = loadImage("https://jacchu.github.io/NatureScene/rain.png");
+    PImage tree = loadImage("https://jacchu.github.io/NatureScene/tree.png");
+    PImage fire = loadImage("https://jacchu.github.io/NatureScene/fire.png");
+    PImage moon = loadImage("https://jacchu.github.io/NatureScene/moon.png");
+    PImage sun = loadImage("https://jacchu.github.io/NatureScene/sun.png");
     
     Characters charactersRain = new Characters(rain);
     Characters charactersTree = new Characters(tree);
@@ -69,7 +69,7 @@ void bundle() {
 void setup () {
   size(1280, 755);
   bundle();
-  rainbow = loadImage("rainbow.png");
+  rainbow = loadImage("https://jacchu.github.io/NatureScene/rainbow.png");
 }
 
 void draw () {
