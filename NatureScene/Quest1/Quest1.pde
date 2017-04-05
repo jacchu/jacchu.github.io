@@ -153,7 +153,7 @@ void mousePressed () {
   for (Characters character: raining) {
     if(character.mouseZone() == true) {
       raintimer = 1;
-      if (random(0,1) > 0.9) {
+      if (random(0,1) > 0.7) {
         showbow = true;
       } else {
         showbow = false;
