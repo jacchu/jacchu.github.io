@@ -122,8 +122,7 @@ void draw () {
   }
 
   tint(255, rainbow_opacity);
-  //rainbow.resize(0, height/2);
-  image(rainbow, width - rainbow.width, 0);
+  image(rainbow, width - rainbow.width, height/2 - rainbow.height);
   tint(255, 255);
     
   if (firetimer >= 1) {
