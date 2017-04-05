@@ -1,4 +1,4 @@
-/*@pjs preload="https://jacchu.github.io/flames.png,https://jacchu.github.io/rain.png,https://jacchu.github.io/tree.png,https://jacchu.github.io/fire.png,https://jacchu.github.io/moon.png,https://jacchu.github.io/sun.png,https://jacchu.github.io/rainbow.png"; */
+/*@pjs preload="flames.png,rain.png,tree.png,fire.png,moon.png,sun.png,rainbow.png"; */
 PImage rainbow;
 ArrayList<Display> images;
 ArrayList<Cloud> canRain;
@@ -27,7 +27,7 @@ void bundle() {
   opacity = new ArrayList<Tree>();
   
   for (int index = 0; index < 20; ++ index) {
-    PImage flames = loadImage("https://jacchu.github.io/flames.png");
+    PImage flames = loadImage("flames.png");
     Cloud cloud = new Cloud();
     Tree tree = new Tree(flames);
     images.add(cloud);
@@ -37,11 +37,11 @@ void bundle() {
   }
   
   for(int index = 0; index < 2; ++ index) {
-    PImage rain = loadImage("https://jacchu.github.io/rain.png");
-    PImage tree = loadImage("https://jacchu.github.io/tree.png");
-    PImage fire = loadImage("https://jacchu.github.io/fire.png");
-    PImage moon = loadImage("https://jacchu.github.io/moon.png");
-    PImage sun = loadImage("https://jacchu.github.io/sun.png");
+    PImage rain = loadImage("rain.png");
+    PImage tree = loadImage("tree.png");
+    PImage fire = loadImage("fire.png");
+    PImage moon = loadImage("moon.png");
+    PImage sun = loadImage("sun.png");
     
     Characters charactersRain = new Characters(rain);
     Characters charactersTree = new Characters(tree);
@@ -69,7 +69,7 @@ void bundle() {
 void setup () {
   size(1280, 755);
   bundle();
-  rainbow = loadImage("https://jacchu.github.io/rainbow.png");
+  rainbow = loadImage("rainbow.png");
 }
 
 void draw () {
@@ -122,11 +122,10 @@ void draw () {
   }
 
   tint(255, rainbow_opacity);
-  rainbow.resize(0, height/2);
+  //rainbow.resize(0, height/2);
   image(rainbow, width - rainbow.width, 0);
   tint(255, 255);
     
-  
   if (firetimer >= 1) {
     firetimer += 1;
   }
@@ -146,7 +145,6 @@ void draw () {
     }
     dampfire = 0;
   }
-  
   for (Display thing: images) {
     thing.display();
   }
@@ -181,6 +179,7 @@ void mousePressed () {
       }
     }
   }
+  
   for(Characters character: startFire) {
     if(character.mouseZone() == true) {
       for(Tree thing: opacity) {
@@ -229,7 +228,7 @@ public class Characters implements Display {
     this.scale = random(0.03, 0.06);
     this.rate = random(0.5, 1);
     this.characterImage = image;
-    this.characterImage.resize(0, round(this.characterImage.height * this.scale));
+    //this.characterImage.resize(0, round(this.characterImage.height * this.scale));
   }
   
   public float getX() {
@@ -383,7 +382,7 @@ public class Tree implements Display {
     this.fireopacity = 255;
     this.scale = random(0.05, 0.07);
     this.flames = flames;
-    this.flames.resize(0, round(this.flames.height * this.scale));
+    //this.flames.resize(0, round(this.flames.height * this.scale));
   }
   
   public void opacity() {
