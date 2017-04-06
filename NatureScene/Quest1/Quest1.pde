@@ -225,7 +225,7 @@ public class Characters implements Display {
     this.x = random(25, width - 25);
     this.y = random(-400, height - 200);
     this.scale = random(0.03, 0.06);
-    this.rate = random(0.5, 1);
+    this.rate = random(5, 10);
     this.characterImage = image;
     //this.characterImage.resize(0, round(this.characterImage.height * this.scale));
   }
@@ -275,7 +275,7 @@ public class Cloud implements Display {
     this.y = random(0, height/3); 
     this.scale = random(-10, 10);
     this.trans = random(100, 255);
-    this.rate = random(0.1, 1);
+    this.rate = random(5, 10);
     this.rain = new Rain(this.x, this.y);
   }
   
