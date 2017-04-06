@@ -128,7 +128,7 @@ void draw () {
   if (firetimer >= 1) {
     firetimer += 1;
   }
-  if (firetimer > 50) {
+  if (firetimer > 100) {
     for(Tree thing: opacity) {
        thing.fadeopacity(true);
     }
@@ -225,7 +225,7 @@ public class Characters implements Display {
     this.x = random(25, width - 25);
     this.y = random(-400, height - 200);
     this.scale = random(0.03, 0.06);
-    this.rate = random(5, 10);
+    this.rate = random(0.5, 1);
     this.characterImage = image;
     //this.characterImage.resize(0, round(this.characterImage.height * this.scale));
   }
@@ -275,7 +275,7 @@ public class Cloud implements Display {
     this.y = random(0, height/3); 
     this.scale = random(-10, 10);
     this.trans = random(100, 255);
-    this.rate = random(5, 10);
+    this.rate = random(0.1, 1);
     this.rain = new Rain(this.x, this.y);
   }
   
@@ -381,6 +381,7 @@ public class Tree implements Display {
     this.fireopacity = 255;
     this.scale = random(0.05, 0.07);
     this.flames = flames;
+    //this.flames.resize(0, round(this.flames.height * this.scale));
   }
   
   public void opacity() {
