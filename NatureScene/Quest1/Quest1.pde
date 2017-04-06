@@ -128,7 +128,7 @@ void draw () {
   if (firetimer >= 1) {
     firetimer += 1;
   }
-  if (firetimer > 100) {
+  if (firetimer > 50) {
     for(Tree thing: opacity) {
        thing.fadeopacity(true);
     }
@@ -381,7 +381,6 @@ public class Tree implements Display {
     this.fireopacity = 255;
     this.scale = random(0.05, 0.07);
     this.flames = flames;
-    //this.flames.resize(0, round(this.flames.height * this.scale));
   }
   
   public void opacity() {
